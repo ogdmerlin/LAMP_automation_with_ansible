@@ -48,7 +48,7 @@ The repository is a trove of scripts and configuration files, each playing a piv
 
 `Clone the repository to your local machine.`
 
-    git clone https://github.com/ogdmerlin/LAMP_automation_with_ansible
+    git clone [link](https://https://github.com/ogdmerlin/LAMP_automation_with_ansible)
 
 `Initiate Vagrant:`
 
@@ -70,8 +70,19 @@ The repository is a trove of scripts and configuration files, each playing a piv
 
                 http:// your master node IP address
 
-#
-
 <img src=Assets/deployed_img.png>
 
 #
+
+PHP Laravel Application
+
+Repository: [Laravel Application](https://https://github.com/laravel/laravel)
+Contributions
+
+Contributions are the lifeblood of this project’s continual evolution and refinement. Feel free to compose your own melodies of improvement and enhancement, submitting them through Pull Requests.
+
+#
+
+Author
+
+OGDMERLIN ..✍🏼
