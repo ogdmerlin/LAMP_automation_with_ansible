@@ -48,7 +48,7 @@ The repository is a trove of scripts and configuration files, each playing a piv
 
 `Clone the repository to your local machine.`
 
-    git clone https://https://github.com/ogdmerlin/LAMP_automation_with_ansible
+    git clone https://github.com/ogdmerlin/LAMP_automation_with_ansible
 
 `Initiate Vagrant:`
 
@@ -87,6 +87,23 @@ Repository: [Laravel Application](https://https://github.com/laravel/laravel)
 Contributions
 
 Contributions are the lifeblood of this project’s continual evolution and refinement. Feel free to compose your own melodies of improvement and enhancement, submitting them through Pull Requests.
+
+#
+
+# # **Setting up Ansible on the master node:** 👇🏽
+
+`Install Ansible on the Master node:`
+
+    sudo apt-add-repository ppa:ansible/ansible
+    sudo apt-get update
+    sudo apt-get install ansible
+
+`Verify the installation:`
+<img src=Assets/ansible-v.png>
+
+`Configure the inventory file`:
+
+    Add the slave’s IP address to the /etc/ansible/hosts file.
 
 #
 
