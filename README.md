@@ -46,18 +46,28 @@ The repository is a trove of scripts and configuration files, each playing a piv
 
 # # **Getting Started:** 👇🏽
 
-Clone the repository to your local machine.
+`Clone the repository to your local machine.`
 
     git clone https://github.com/ogdmerlin/LAMP_automation_with_ansible
 
-Initiate Vagrant:
+`Initiate Vagrant:`
 
     vagrant up
 
-Deploy the LAMP Stack:
+`Deploy the LAMP Stack:`
 
         vagrant ssh master
         cd /vagrant
         bash lampstack_install.sh
 
-Unleash the bash scripts’ prowess to orchestrate a masterful LAMP stack deployment.
+`Deploy the Application:`
+
+            vagrant ssh master
+            cd /vagrant
+            bash apache_setup.sh
+
+`Access the Application:`
+
+                http:// your master node IP address
+
+#
