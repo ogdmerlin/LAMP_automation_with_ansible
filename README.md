@@ -48,7 +48,7 @@ The repository is a trove of scripts and configuration files, each playing a piv
 
 `Clone the repository to your local machine.`
 
-    git clone [link](https://https://github.com/ogdmerlin/LAMP_automation_with_ansible)
+    git clone https://https://github.com/ogdmerlin/LAMP_automation_with_ansible
 
 `Initiate Vagrant:`
 
@@ -60,11 +60,18 @@ The repository is a trove of scripts and configuration files, each playing a piv
         cd /vagrant
         bash lampstack_install.sh
 
+`verify the stacks are well installed and configured:`
+<img src=Assets/php-m.png>
+<img src=Assets/php-v.png>
+
 `Deploy the Application:`
 
             vagrant ssh master
             cd /vagrant
             bash apache_setup.sh
+
+<img src=Assets/apache2_running.png>
+<img src=Assets/mysql-status.png>
 
 `Access the Application:`
 
