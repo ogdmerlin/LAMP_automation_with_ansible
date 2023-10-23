@@ -20,7 +20,7 @@ Welcome to a sophisticated automation project that aims to proficiently set up a
 
 # # **Prerequisites:** 👇🏽
 
-Before diving into the deployment odyssey, ensure the availability of the following tools:
+**Before diving into the deployment odyssey, ensure the availability of the following tools:**
 
 `Vagrant`
 
@@ -32,7 +32,7 @@ Before diving into the deployment odyssey, ensure the availability of the follow
 
 #
 
-# # **Repository Structure** 👇🏽
+# # **Repository Structure:** 👇🏽
 
 The repository is a trove of scripts and configuration files, each playing a pivotal role in orchestrating the automation symphony:
 
@@ -43,3 +43,21 @@ The repository is a trove of scripts and configuration files, each playing a piv
 `apache_setup.sh`: The virtuoso script that fine-tunes the Apache configuration, ensuring it performs in harmony with the application requirements.
 
 #
+
+# # **Getting Started:** 👇🏽
+
+Clone the repository to your local machine.
+
+    git clone https://github.com/ogdmerlin/LAMP_automation_with_ansible
+
+Initiate Vagrant:
+
+    vagrant up
+
+Deploy the LAMP Stack:
+
+        vagrant ssh master
+        cd /vagrant
+        bash lampstack_install.sh
+
+Unleash the bash scripts’ prowess to orchestrate a masterful LAMP stack deployment.
