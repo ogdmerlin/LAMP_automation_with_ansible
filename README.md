@@ -106,9 +106,3 @@ Contributions are the lifeblood of this project’s continual evolution and refi
     Add the slave’s IP address to the /etc/ansible/hosts file.
 
 #
-
-_TO BE CONTINUED.._
-
-Author
-
-OGDMERLIN ..✍🏼
