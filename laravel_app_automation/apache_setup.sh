@@ -22,7 +22,8 @@ sudo mv composer.phar /usr/local/bin/composer
 sudo composer install 
 sudo composer update 
 
-sudo php artisan key:generate
+
+php artisan key:generate
 
 # Configure Apache
 sudo a2dissite 000-default.conf 
@@ -49,12 +50,30 @@ sudo tee laravel.conf <<-EOF
 </VirtualHost>
 EOF
 
-# Set permissions for the Laravel application
-sudo chown -R www-data:www-data /var/www/laravel
-sudo chmod -R 755 /var/www/laravel/storage
+# enable the site
+sudo a2ensite laravel
 
-# Enable the Laravel site and restart Apache to apply changes
-sudo a2ensite laravel.conf 
-sudo systemctl restart apache2 
+# create the site directory
+sudo mkdir -p /var/www/laravel
 
-echo "Apache2 and Laravel setup completed."
+# copy the content to site directory
+cd /home/vagrant
+echo $(pwd)
+sudo cp -r laravel/. /var/www/laravel/
+
+# go back to the directory
+cd /var/www/laravel
+echo $(pwd)
+
+# set permission for the files
+sudo chown -R vagrant:www-data /var/www/laravel/
+sudo find /var/www/laravel/ -type f -exec chmod 664 {} \;
+sudo find /var/www/laravel/ -type d -exec chmod 775 {} \;
+sudo chgrp -R www-data storage bootstrap/cache
+sudo chmod -R ug+rwx storage bootstrap/cache
+
+# reload apache
+sudo systemctl reload apache2
+
+# done
+echo 'done'

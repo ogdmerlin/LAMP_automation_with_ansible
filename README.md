@@ -105,4 +105,10 @@ Contributions are the lifeblood of this project’s continual evolution and refi
 
     Add the slave’s IP address to the /etc/ansible/hosts file.
 
+<img src=Assets/sudo__etc_ansible_hosts.png>
+
+    Added my slave node's IP address to the ansible hosts file.
+
+<img src=Assets/hosts_file.png>
+
 #

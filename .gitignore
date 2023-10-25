@@ -1,0 +1,7 @@
+/.vagrant/*
+./.vagrant/*
+.vagrant
+"./.vagrant"
+private_key
+\.vagrant\rgloader
+.vagrant\rgloader
