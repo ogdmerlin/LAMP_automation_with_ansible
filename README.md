@@ -112,3 +112,46 @@ Contributions are the lifeblood of this project’s continual evolution and refi
 <img src=Assets/hosts_file.png>
 
 #
+
+# # **Setting up Ansible on the slave node:** 👇🏽
+
+Since we are using ansible to automate the installation of our LAMP stack in this guide, we need to generate an sshkey with `ssh-keygen` and then make our ansible ssh into the slave node without authentication by copying the sshkey from our master to our slave node.
+
+Below is the command used to generate and copy the `ssh key` from our master to slave node.
+
+`for unix-like OS:`
+
+    master_public_key=$(vagrant ssh master -c "sudo su - vagrant -c 'cat ~/.ssh/id_rsa.pub'")
+
+`Step2:`
+
+    vagrant ssh slave -c "echo '$master_public_key' | sudo su - vagrant -c 'tee -a ~/.ssh/authorized_keys'"
+
+`for windows/pwsh:`
+
+    $master_public_key=vagrant ssh master -c "sudo su - vagrant -c 'cat ~/.ssh/id_rsa.pub'"
+
+`Step2:`
+
+    vagrant ssh slave -c "echo '$master_public_key' | sudo su - vagrant -c 'tee -a ~/.ssh/authorized_keys'"
+
+<img src=Assets/ansible_to_slave.png>
+
+`I installed the lamp stack on the slave node using ansible from thr master's node`
+
+`Below is a screeshot confirmation of the installed and running AMP application on slave node.` 👇🏽
+
+<img src=Assets/ap_la-setup-comp..png>
+<img src=Assets/slave_lamp.png>
+
+#
+
+`Below is a screenshot of the ansible playbook i created on the master node, so, it  and run and execute the automation of our LAMP STACK on the slave node:` 👇🏽
+
+<img src=Assets/ansible_slave.png>
+
+#
+
+`Below is the screenshot of the deployed application:` 👇🏽
+
+<img src=Assets/laravel_slave_IP.png>

@@ -22,7 +22,6 @@ sudo mv composer.phar /usr/local/bin/composer
 sudo composer install 
 sudo composer update 
 
-
 php artisan key:generate
 
 # Configure Apache
