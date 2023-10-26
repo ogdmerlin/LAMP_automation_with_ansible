@@ -146,7 +146,7 @@ Below is the command used to generate and copy the `ssh key` from our master to 
 
 #
 
-`Below is a screenshot of the ansible playbook i created on the master node, so, it  and run and execute the automation of our LAMP STACK on the slave node:` 👇🏽
+`Below is a screenshot of the ansible playbook i created on the master node. It is to run and execute the automation of our LAMP STACK on the slave node:` 👇🏽
 
 <img src=Assets/ansible_slave.png>
 
